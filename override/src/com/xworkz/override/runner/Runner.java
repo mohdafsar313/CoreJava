@@ -196,6 +196,76 @@ public class Runner {
         mars.collectSoilSamples();
         mars.analyzeAtmosphere();
 
+        Bank bank = new OnlineBank();
+        bank.processTransaction();
+
+        OnlineBank online = new OnlineBank();
+        online.checkBalance();
+        online.transferFunds();
+
+        Publisher publisher = new BookPublisher();
+        publisher.publish();
+
+        BookPublisher bookPub = new BookPublisher();
+        bookPub.editManuscript();
+        bookPub.designCover();
+
+        Restaurant restaurant = new FastFoodRestaurant();
+        restaurant.serveFood();
+
+        FastFoodRestaurant fastFood = new FastFoodRestaurant();
+        fastFood.takeDriveThruOrder();
+        fastFood.prepareComboMeal();
+
+        WeatherStation station = new DigitalWeatherStation();
+        station.recordTemperature();
+
+        DigitalWeatherStation digital = new DigitalWeatherStation();
+        digital.displayHumidity();
+        digital.sendAlert();
+
+        DeliveryService service = new ExpressDelivery();
+        service.deliverPackage();
+
+        ExpressDelivery express = new ExpressDelivery();
+        express.trackPackage();
+        express.notifyCustomer();
+
+        TigerReserve reserve = new TigerReserve();
+        reserve.monitorTigers();
+        reserve.conductSafari();
+
+        Theatre theatre = new Multiplex();
+        theatre.showMovie();
+
+        Multiplex multiplex = new Multiplex();
+        multiplex.offerSnacks();
+        multiplex.reserveSeats();
+
+        Gym gym = new CrossfitGym();
+        gym.workout();
+
+        CrossfitGym crossfit = new CrossfitGym();
+        crossfit.startTimer();
+        crossfit.logPerformance();
+
+        MythicalCreature creature = new Dragon();
+        creature.usePower();
+
+        Dragon dragon = new Dragon();
+        dragon.guardTreasure();
+        dragon.roar();
+
+        TimeMachine machine = new QuantumTimeMachine();
+        machine.travel();
+
+        QuantumTimeMachine quantum = new QuantumTimeMachine();
+        quantum.stabilizeWormhole();
+        quantum.calibrateCoordinates();
+
+
+
+
 
     }
 }
