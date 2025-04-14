@@ -7,7 +7,6 @@ public class TypeCastingRunner {
     public static void main(String[] args) {
         TypeCasting typeCasting = new TypeCasting();
 
-        // Casting Wizard and its subclass
         Wizard wizard = new Wizard();
         ElementalWizard elementalWizard = new ElementalWizard();
 
@@ -16,7 +15,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Submarine and its subclass
         Submarine submarine = new Submarine();
         DeepSeaExplorer deepSeaExplorer = new DeepSeaExplorer();
 
@@ -25,7 +23,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Spacecraft and its subclass
         Spacecraft spacecraft = new Spacecraft();
         MarsRover marsRover = new MarsRover();
 
@@ -34,7 +31,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting SecuritySystem and its subclass
         SecuritySystem securitySystem = new SecuritySystem();
         AICyberSecurity aiCyberSecurity = new AICyberSecurity();
 
@@ -43,7 +39,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Theater and its subclass
         Theater theater = new Theater();
         IMAXTheater imaxTheater = new IMAXTheater();
 
@@ -52,7 +47,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Croma9 and its subclass
         Croma9 croma9 = new Croma9();
         Land9 land9 = new Land9();
 
@@ -61,7 +55,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Animal and its subclass
         Animal animal = new Animal();
         Dog dog = new Dog();
 
@@ -70,7 +63,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Building and its subclass
         Building building = new Building();
         Skyscraper skyscraper = new Skyscraper();
 
@@ -79,7 +71,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Device and its subclass
         Device device = new Device();
         Smartphone smartphone = new Smartphone();
 
@@ -88,7 +79,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Bank and its subclass
         Bank bank = new Bank();
         OnlineBank onlineBank = new OnlineBank();
 
@@ -97,7 +87,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Transport and its subclass
         Transports transport = new Transports();
         Metro metro = new Metro();
 
@@ -106,7 +95,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Game and its subclass
         Game game = new Game();
         VideoGame videoGame = new VideoGame();
 
@@ -115,7 +103,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Hospital and its subclass
         Hospital hospital = new Hospital();
         SpecialityHospital specialityHospital = new SpecialityHospital();
 
@@ -124,7 +111,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting School and its subclass
         School school = new School();
         HighSchool highSchool = new HighSchool();
 
@@ -133,7 +119,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Restaurant and its subclass
         Restaurant restaurant = new Restaurant();
         FastFoodRestaurant fastFoodRestaurant = new FastFoodRestaurant();
 
@@ -142,7 +127,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Instrument and its subclass
         Instrument instrument = new Instrument();
         Guitar guitar = new Guitar();
 
@@ -151,7 +135,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Gym and its subclass
         Gym gym = new Gym();
         CrossfitGym crossfitGym = new CrossfitGym();
 
@@ -160,7 +143,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Planet and its subclass
         Galaxy galaxy = new Galaxy();
         Planet planet = new Planet();
 
@@ -169,7 +151,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Media and its subclass
         Media media = new Media();
         Video video = new Video();
 
@@ -178,7 +159,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Experiment and its subclass
         Experiment experiment = new Experiment();
         ChemistryExperiment chemistryExperiment = new ChemistryExperiment();
 
@@ -187,7 +167,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Sport and its subclass
         Sport sport = new Sport();
         Cricket cricket = new Cricket();
 
@@ -196,7 +175,6 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting WeatherStation and its subclass
         WeatherStation weatherStation = new WeatherStation();
         DigitalWeatherStation digitalWeatherStation = new DigitalWeatherStation();
 
@@ -205,11 +183,47 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        // Casting Transport and Train subclass
         Transport transport1 = new Transport();
         Train train = new Train();
 
         typeCasting.castTransport(transport1);
         typeCasting.castTransport(train);
+
+        System.out.println("==== Publisher ====");
+        Publisher publisher = new Publisher();
+        BookPublisher bookPublisher = new BookPublisher();
+        typeCasting.castPublisher(publisher);
+        typeCasting.castPublisher(bookPublisher);
+        System.out.println("====================");
+
+        System.out.println("==== TimeMachine ====");
+        TimeMachine timeMachine = new TimeMachine();
+        QuantumTimeMachine quantumTimeMachine = new QuantumTimeMachine();
+        typeCasting.castTimeMachine(timeMachine);
+        typeCasting.castTimeMachine(quantumTimeMachine);
+        System.out.println("====================");
+
+        System.out.println("==== Application ====");
+        Application application = new Application();
+        WebApplication webApplication = new WebApplication();
+        typeCasting.castApplication(application);
+        typeCasting.castApplication(webApplication);
+        System.out.println("====================");
+
+        System.out.println("==== Studio ====");
+        Studio studio = new Studio();
+        RecordingStudio recordingStudio = new RecordingStudio();
+        typeCasting.castStudio(studio);
+        typeCasting.castStudio(recordingStudio);
+        System.out.println("====================");
+
+        System.out.println("==== Food ====");
+        Food food = new Food();
+        Pizza pizza = new Pizza();
+        typeCasting.castFood(food);
+        typeCasting.castFood(pizza);
+        System.out.println("====================");
+
+
     }
 }

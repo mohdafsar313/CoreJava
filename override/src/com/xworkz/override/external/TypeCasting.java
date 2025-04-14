@@ -325,6 +325,59 @@ public class TypeCasting {
         }
     }
 
+    public void castPublisher(Publisher publisher) {
+        if (publisher != null) {
+            publisher.publish();
+            if (publisher instanceof BookPublisher) {
+                BookPublisher book = (BookPublisher) publisher;
+                book.designCover();
+                book.publish();
+            }
+        }
+    }
+    public void castTimeMachine(TimeMachine timeMachine) {
+        if (timeMachine != null) {
+            timeMachine.travel();
+            if (timeMachine instanceof QuantumTimeMachine) {
+                QuantumTimeMachine time = (QuantumTimeMachine) timeMachine;
+                time.calibrateCoordinates();
+                time.travel();
+            }
+        }
+    }
+
+    public void castApplication(Application application) {
+        if (application != null) {
+            application.launch();
+            if (application instanceof WebApplication) {
+                WebApplication app = (WebApplication) application;
+                app.launch();
+                app.loadPage();
+            }
+        }
+    }
+    public void castStudio(Studio studio) {
+        if (studio != null) {
+            studio.produce();
+            if (studio instanceof RecordingStudio) {
+                RecordingStudio rec = (RecordingStudio) studio;
+                rec.mixAudio();
+                rec.setupMicrophones();
+            }
+        }
+    }
+    public void castFood(Food food) {
+        if (food != null) {
+            food.prepare();
+            if (food instanceof Pizza) {
+                Pizza pizza = (Pizza) food;
+                pizza.addToppings();
+                pizza.bake();
+            }
+        }
+    }
+
+
 
 
 }
