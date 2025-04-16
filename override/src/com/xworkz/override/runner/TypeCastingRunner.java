@@ -31,13 +31,9 @@ public class TypeCastingRunner {
 
         System.out.println("==================================");
 
-        SecuritySystem securitySystem = new SecuritySystem();
+        SecuritySystem securitySystem = new SecuritySystem("cyber",123);
         AICyberSecurity aiCyberSecurity = new AICyberSecurity();
 
-        typeCasting.castSecuritySystem(securitySystem);
-        typeCasting.castSecuritySystem(aiCyberSecurity);
-
-        System.out.println("==================================");
 
         Theater theater = new Theater();
         IMAXTheater imaxTheater = new IMAXTheater();

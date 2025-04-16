@@ -5,6 +5,10 @@ public class AICyberSecurity extends SecuritySystem{
         System.out.println("AICyberSecurity: Constructor is running");
     }
 
+    public AICyberSecurity(String security_name, int security_number) {
+        super(security_name, security_number);
+    }
+
     @Override
     public void monitor() {
         System.out.println("AICyberSecurity: Using AI to detect suspicious patterns");

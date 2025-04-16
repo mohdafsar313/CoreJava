@@ -195,27 +195,7 @@ public class TypeCasting {
         }
     }
 
-    public void castDevice(Device device) {
-        if (device != null) {
-            device.powerOn();
-            if (device instanceof Smartphone) {
-                Smartphone phone = (Smartphone) device;
-                phone.browseInternet();
-                phone.browseInternet();
-            }
-        }
-    }
 
-    public void castSubmarine(Submarine submarine) {
-        if (submarine != null) {
-            submarine.dive();
-            if (submarine instanceof DeepSeaExplorer) {
-                DeepSeaExplorer explorer = (DeepSeaExplorer) submarine;
-                explorer.captureFootage();
-                explorer.analyzePressure();
-            }
-        }
-    }
 
     public void castCroma(Croma9 croma) {
         if (croma != null) {
@@ -237,27 +217,7 @@ public class TypeCasting {
             }
         }
     }
-    public void castSecuritySystem(SecuritySystem system) {
-        if (system != null) {
-            system.monitor();
-            if (system instanceof AICyberSecurity) {
-                AICyberSecurity ai = (AICyberSecurity) system;
-                ai.autoRespond();
-                ai.generateReport();
-            }
-        }
-    }
 
-    public void castSpacecraft(Spacecraft craft) {
-        if (craft != null) {
-            craft.launch();
-            if (craft instanceof MarsRover) {
-                MarsRover cargo = (MarsRover) craft;
-                cargo.collectSoilSample();
-                cargo.launch();
-            }
-        }
-    }
 
     public void castMedia(Media media) {
         if (media != null) {
@@ -271,16 +231,6 @@ public class TypeCasting {
     }
 
 
-    public void castAnimal(Animal animal) {
-        if (animal != null) {
-            animal.makeSound();
-            if (animal instanceof Dog) {
-                Dog dog = (Dog) animal;
-                dog.fetch();
-                dog.wagTail();
-            }
-        }
-    }
 
     public void castExperiment(Experiment experiment) {
         if (experiment != null) {
