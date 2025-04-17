@@ -3,7 +3,7 @@ package com.xworkz.override.internal;
 public class Plant {
     private String name;
     private String use;
-    public Plant() {
+    public Plant(String name   ,String use) {
         System.out.println("Plant: Constructor is running");
     }
 

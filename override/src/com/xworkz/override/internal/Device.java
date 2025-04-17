@@ -1,6 +1,6 @@
 package com.xworkz.override.internal;
 
-public class Device {
+public class Device{
     private String name;
     private int price;
     public Device(String name,int price) {
