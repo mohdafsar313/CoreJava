@@ -34,5 +34,11 @@ public class runner {
         Shape rectangle = new Rectangle();
         ShapeManager shapeManager2 = new ShapeManager(rectangle);
         shapeManager2.displayShape();
+        Animal dog = new Dog();
+        AnimalTrainer dogTrainer = new AnimalTrainer(dog);
+        dogTrainer.makeSound();
+        Animal cat = new Cat();
+        AnimalTrainer catTrainer = new AnimalTrainer(cat);
+        catTrainer.makeSound();
     }
 }
