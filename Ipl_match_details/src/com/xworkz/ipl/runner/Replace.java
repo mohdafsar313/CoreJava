@@ -2,25 +2,34 @@ package com.xworkz.ipl.runner;
 
 public class Replace {
     public static void main(String[] args) {
-        String input="you are welcome";
+        String input = "you are welcome";
+        input = input.toLowerCase();  // Ensure uniform handling
+        StringBuilder output = new StringBuilder();
+
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
-            if(ch=='a'){
-                System.out.println(input.charAt(i)+1);
-            }
-            if(ch=='e'){
-                System.out.println(input.charAt(i)+1);
-            }
-            if(ch=='i'){
-                System.out.println(input.charAt(i)+1);
-            }
-            if(ch=='o'){
-                System.out.println(input.charAt(i)+1);
-            }
-            if(ch=='u'){
-                System.out.println(input.charAt(i)+1);
+
+
+            if (isVowel(ch)) {
+
+                char nextChar = (char)(ch + 1);
+
+                while (isVowel(nextChar)) {
+                    nextChar++;
+                }
+                output.append(nextChar);
+            } else {
+
+                output.append(ch);
             }
         }
-        System.out.println(input);
+
+        System.out.println(output.toString());
+    }
+
+    // Helper method to check vowels
+    public static boolean isVowel(char ch) {
+        return "aeiou".indexOf(ch)!=-1;
+
     }
 }
