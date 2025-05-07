@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FeedBack Application</title>
+    <style>
+        div{
+        display:inline;
+        margin:100px;
+        }
+        nav{
+        border:solid;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.x-workz.in/Logo.png" alt="Bootstrap" width="35" height="35">
+        </a>
+    </div>
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" style="font-size:40px">Feedback Application</span>
+    </div>
+</nav>
+<br><br>
+<section style="border:solid">
+    <form action="submit" method="post"><br><br>
+        Name:<input type="text" name="name"><br><br>
+        E-Mail:<input type="email" name="email"><br><br>
+        Contact Number:<input type="tel" name="contactnumber"><br><br>
+        Feedback:<input type="text" name="feedback"><br><br>
+
+        <input type="submit" name="submit">
+    </form>
+</section>
+</body>
+</html>
