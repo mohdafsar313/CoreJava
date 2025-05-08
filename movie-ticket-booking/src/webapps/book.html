@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ticket Booking </title>
+    <style>
+        body {
+      background-image: url('https://cdn-imgix.headout.com/media/images/563553a6986ed75659629ce90dbd871d-Theatre%20Generic_0000s_0003_AdobeStock_374285858.jpg?auto=format&q=90&fit=crop&ar=16%3A9&crop=faces');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+    }
+    </style>
+</head>
+<body align="center">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid text-light">
+        <a class="navbar-brand" href="#">Cinema-View</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <h1 style="color:white">Book your Tickets</h1>
+<div style="color:white" >
+    <form action="book" method="post" style="border:solid">
+        Name:<input type="text" placeholder="Enter the Name" name="name" class="text-danger"><br><br>
+        Contact Number:<input type="tel" placeholder="Enter the Contact Number" name="contactnumber"  class="text-danger"><br><br>
+        Movie Name:<input type="text" placeholder="Enter the Movie Name" name="moviename" class="text-danger"><br><br>
+        Ticket Price:<input type="number" placeholder="Enter the price of ticket" name="ticketprice" class="text-danger"><br><br>
+        Number Of Tickets:<input type="number" placeholder="Enter the Number Of Tickets" name="numberoftickets" class="text-danger"><br><br>
+        <br><br>
+        <input type="submit" value="book" class="text-danger btn-warning">
+    </form>
+</div>
+</body>
+</html>
